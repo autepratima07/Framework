@@ -14,8 +14,8 @@ public class Test_001 extends BaseClass {
 	//Identifying web elements
 	LoginPom login=PageFactory.initElements(driver, LoginPom.class);
    
-	Library.custom_sendkeys(login.getemail_txt(),excel.getSheetData("Sheet1", 0, 0));
-	Library.custom_sendkeys(login.getpass(),excel.getSheetData("Sheet1", 0, 1));
+	Library.custom_sendkeys(login.getemail_txt(),excel.getSheetData("Sheet1", 0, 0), "Email");
+	Library.custom_sendkeys(login.getpass(),excel.getSheetData("Sheet1", 0, 1), "password");
 	
 	}
 	
